@@ -1,0 +1,23 @@
+.main-btn {
+  border: 2px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: rgba(255, 78, 214, 0);
+  transition: background-color 300ms ease-out, border 300ms ease-out;
+  &--black {
+    color: var(--title-black);
+  }
+  &--white {
+    color: #fff;
+  }
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 78, 214, 0.4);
+    border: 2px solid rgba(255, 78, 214, 0);
+  }
+}

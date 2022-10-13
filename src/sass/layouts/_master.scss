@@ -1,0 +1,42 @@
+.master {
+}
+
+.master__container {
+  & > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.master__card {
+  background-color: rgba(244, 244, 244, 0.6);
+  padding-bottom: 20px;
+}
+.master__photo {
+  max-width: 100%;
+}
+.master__text {
+  padding: 20px;
+}
+.master__socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.master__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--title-white);
+  fill: var(--accent-color);
+  &:hover > .master__svg,
+  &:focus > .master__svg {
+    fill: var(--accent-hover);
+  }
+}
+
+.master__svg {
+  transition: fill 300ms ease-out;
+}

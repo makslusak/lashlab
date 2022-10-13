@@ -1,0 +1,25 @@
+.about {
+}
+.container {
+}
+.about__container {
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  & > :last-child {
+    margin-top: 20px;
+  }
+}
+.beforetitle-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+  fill: var(--pretitle-color);
+}
+.about__beforetitle {
+}
+.about__title {
+}
+.about__aftertitle {
+}

@@ -1,0 +1,43 @@
+.hero {
+}
+.hero__container {
+  padding-top: 210px;
+  padding-bottom: 180px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/mobil-hero-min.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center center;
+}
+.hero__container > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.beforetitle.hero__beforetitle {
+  font-size: 18px;
+}
+.title.hero__title {
+  color: var(--title-white);
+  font-size: 42px;
+}
+.hero__aftertitle {
+  color: var(--pretitle-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+}
+.hero__social {
+  display: none;
+}
+@media screen and (min-width: 360px) {
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__beforetitle {
+    font-size: 22px;
+  }
+}
