@@ -3,20 +3,28 @@
     <a href="./" class="header__logo logo">
       <img class="logo__img" width="65px" src="./images/logo.png" alt="logo" />
     </a>
-    <div class="wrapper">
+    <div class="header__wrapper">
       <nav class="header__nav nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Про нас</a></li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Послуги та ціни</a>
+            <a href="#about" class="nav__link">Про нас</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Майстер</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+          <li class="nav__item">
+            <a href="#prices" class="nav__link">Послуги та ціни</a>
+          </li>
+          <li class="nav__item">
+            <a href="#master" class="nav__link">Майстер</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">Контакти</a>
+          </li>
         </ul>
       </nav>
       <div class="header__contacts">
-        <a href="" class="header__phone"></a>
-        <button class="main-btn" type="button">Онлайн-запис</button>
+        <!-- <a href="" class="header__phone"></a> -->
+        <button class="main-btn header__btn" type="button" data-modal-open>
+          Онлайн-запис
+        </button>
       </div>
     </div>
     <button class="mobil-btn menu-button" type="button" data-menu-open>

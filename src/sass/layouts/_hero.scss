@@ -18,13 +18,14 @@
 }
 .beforetitle.hero__beforetitle {
   font-size: 18px;
+  color: var(--pretitle-color-light);
 }
 .title.hero__title {
   color: var(--title-white);
   font-size: 42px;
 }
 .hero__aftertitle {
-  color: var(--pretitle-color);
+  color: var(--pretitle-color-light);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;

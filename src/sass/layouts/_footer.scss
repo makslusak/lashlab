@@ -20,10 +20,10 @@
     margin-bottom: 15px;
   }
 }
-.contacts__item {
-}
+
 .contacts__link {
-  fill: var(--pretitle-color);
+  color: var(--pretitle-color-light);
+  fill: var(--pretitle-color-light);
   display: flex;
   gap: 20px;
   align-items: center;

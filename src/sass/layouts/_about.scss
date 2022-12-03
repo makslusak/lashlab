@@ -15,11 +15,13 @@
   justify-content: flex-start;
   align-items: flex-end;
   gap: 10px;
-  fill: var(--pretitle-color);
+  fill: var(--pretitle-color-dark);
 }
 .about__beforetitle {
+  color: var(--pretitle-color-dark);
 }
 .about__title {
 }
 .about__aftertitle {
+  color: var(--pretitle-color-dark);
 }

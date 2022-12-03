@@ -57,7 +57,14 @@
 }
 .mobil-menu__phone {
 }
-.mobil-menu__socials {
+.mobil__links {
+  color: var(--pretitle-color-dark);
+  fill: var(--pretitle-color-dark);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 .mobil-menu__socials {
   margin-top: 25px;
