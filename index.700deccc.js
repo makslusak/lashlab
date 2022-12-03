@@ -1,2 +1,0 @@
-const e=document.querySelector("[data-menu-open]"),n=document.querySelector("[data-menu-close]"),s=document.querySelector(".mobil-menu");e.addEventListener("click",(function(e){s.classList.add("js-menu-open"),s.classList.remove("js-menu-close")})),n.addEventListener("click",(function(e){s.classList.remove("js-menu-open"),s.classList.add("js-menu-close")}));
-//# sourceMappingURL=index.700deccc.js.map
