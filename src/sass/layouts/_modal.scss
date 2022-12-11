@@ -9,8 +9,8 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 24px;
+  padding-left: 24px;
   transition: transform 300ms ease-out;
 }
 .mobil-wrapper {
@@ -42,7 +42,9 @@
 .modal__form :last-child {
   margin-top: 20px;
 }
-.modal__btn {
+.modal__close {
+  border: none;
+  background-color: transparent;
 }
 .modal__input {
   width: 100%;
@@ -65,4 +67,8 @@
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
+  .mobil-container {
+  }
+  .modal {
+  }
 }

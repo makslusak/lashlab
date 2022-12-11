@@ -1,17 +1,17 @@
 .hero {
-}
-.hero__container {
-  padding-top: 210px;
-  padding-bottom: 180px;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../images/mobil-hero-min.jpg);
+    url(../images/ttablet-hero-min.jpg);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center center;
+}
+.hero__container {
+  padding-top: 210px;
+  padding-bottom: 180px;
 }
 .hero__container > *:not(:last-child) {
   margin-bottom: 20px;
@@ -31,7 +31,7 @@
   line-height: 1.62;
   letter-spacing: 0.02em;
 }
-.hero__social {
+.hero__socials {
   display: none;
 }
 @media screen and (min-width: 360px) {
@@ -40,5 +40,46 @@
   }
   .hero__beforetitle {
     font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../images/ttablet-hero-min.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center center;
+  }
+  .hero__container {
+    padding: 240px 20px 20px 137px;
+  }
+  .hero__socials {
+    margin-top: 220px;
+    display: flex;
+    gap: 40px;
+
+    &:first-child {
+      margin-left: -10px;
+    }
+  }
+  .hero__link {
+    display: block;
+    padding: 10px;
+    margin-left: -10px;
+    fill: var(--pretitle-color-light);
+    transition: fill 300ms ease-out;
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero__container {
+    padding: 240px 20px 20px 250px;
   }
 }
