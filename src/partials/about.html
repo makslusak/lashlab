@@ -8,16 +8,44 @@
     </div>
     <div class="about__card">
       <div class="about__images">
-        <img
-          class="about__image"
-          src="./images/tablet-about-min.jpg"
-          alt="нарощення вій"
-        />
-        <img
-          class="about__image"
-          src="./images/tablet-about2-min.jpg"
-          alt="дівчина з нарощеними віями"
-        />
+        <picture loading="lazy" class="about__image">
+          <source
+            srcset="./images/desktop-about-min.jpg"
+            media="(min-width: 1000px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./images/tablet-about-min.jpg"
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+
+          <img
+            loading="lazy"
+            class="about__image"
+            src="./images/tablet-about-min.jpg"
+            alt="Сайт Технокряк"
+          />
+        </picture>
+        <picture loading="lazy" class="about__image">
+          <source
+            srcset="./images/desktop-about2-min.jpg"
+            media="(min-width: 1000px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="./images/tablet-about2-min.jpg"
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+
+          <img
+            loading="lazy"
+            class="about__image"
+            src="./images/tablet-about2-min.jpg"
+            alt="нарощення вій"
+          />
+        </picture>
       </div>
       <div class="about__wrpr">
         <div class="about__text">

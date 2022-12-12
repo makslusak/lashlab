@@ -24,9 +24,15 @@
 .contacts__link {
   color: var(--pretitle-color-light);
   fill: var(--pretitle-color-light);
-  display: flex;
+  display: inline-flex;
   gap: 20px;
   align-items: center;
+  transition: fill 300ms ease-out, color 300ms ease-out;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    color: var(--title-white);
+  }
 }
 .contacts__svg {
   display: flex;

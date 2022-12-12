@@ -1,8 +1,11 @@
 .gallery__section {
   padding-top: 0;
 }
-.container__section {
+.container__gallery {
   min-width: 0;
+}
+.gallery__beforetitle {
+  margin-bottom: 20px;
 }
 .swiper-slide {
   overflow: hidden;

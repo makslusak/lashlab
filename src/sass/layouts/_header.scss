@@ -93,7 +93,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
     transition: color 300ms ease-out;
@@ -101,5 +101,18 @@
     &:focus {
       color: var(--accent-color);
     }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nav__link {
+    font-size: 14px;
+  }
+  .nav__list {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__link {
+    font-size: 16px;
   }
 }

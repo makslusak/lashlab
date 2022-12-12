@@ -40,9 +40,14 @@
   border-radius: 50%;
   background-color: var(--title-white);
   fill: var(--accent-color);
+  transition: background-color 300ms ease-out;
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 78, 214, 0.4);
+  }
   &:hover > .master__svg,
   &:focus > .master__svg {
-    fill: var(--accent-hover);
+    fill: var(--title-white);
   }
 }
 
