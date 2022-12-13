@@ -10,9 +10,15 @@ function numberOfSlide() {
     return 3;
   } else if (window.matchMedia('(min-width: 768px)').matches) {
     return 2;
-  } else {
+  } else if (window.matchMedia('(min-width: 480px)').matches) {
     return 1.43;
-  }
+  } else if (window.matchMedia('(min-width: 400px)').matches) {
+    return 1.3;
+  } else if (window.matchMedia('(min-width: 380px)').matches) {
+    return 1.2;
+  } else if (window.matchMedia('(min-width: 360px)').matches) {
+    return 1.1;
+  } else return 1;
 }
 
 function slideGap() {

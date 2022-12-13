@@ -31,9 +31,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(97, 97, 97, 0.3);
-  & :not(:first-child) {
-    padding-top: 15px;
-  }
+  padding: 10px;
 }
 .prices__service {
 }

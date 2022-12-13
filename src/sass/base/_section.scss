@@ -1,4 +1,16 @@
 .section {
-  padding-top: 84px;
-  padding-bottom: 84px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

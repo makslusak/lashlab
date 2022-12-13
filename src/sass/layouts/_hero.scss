@@ -34,6 +34,21 @@
 .hero__socials {
   display: none;
 }
+@media screen and (max-width: 320px) {
+  .hero__container {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
+  .title.hero__title {
+    font-size: 36px;
+  }
+  .beforetitle.hero__beforetitle {
+    font-size: 14px;
+  }
+  .hero__aftertitle {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 360px) {
   .hero__title {
     font-size: 48px;
@@ -55,7 +70,7 @@
     background-position: center center;
   }
   .hero__container {
-    padding: 240px 20px 20px 123px;
+    padding: 240px 32px 32px 123px;
   }
   .hero__socials {
     margin-top: 220px;
@@ -80,12 +95,12 @@
 }
 @media screen and (min-width: 1000px) {
   .hero__container {
-    padding: 240px 20px 20px 202px;
+    padding: 240px 40px 40px 202px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__container {
-    padding: 240px 20px 20px 95px;
+    padding: 240px 40px 40px 95px;
   }
   .beforetitle.hero__beforetitle {
     font-size: 20px;

@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 24px;
 }
 @-webkit-keyframes rotate-in-center {
   0% {
@@ -104,6 +104,9 @@
   }
 }
 @media screen and (min-width: 1000px) {
+  .header__container {
+    padding: 40px 40px 0;
+  }
   .nav__link {
     font-size: 14px;
   }

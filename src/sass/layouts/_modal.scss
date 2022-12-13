@@ -1,13 +1,10 @@
-.mobil-container {
-  position: absolute;
-  z-index: 9;
-  top: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
 .backdrop {
   transition: transform 300ms ease-out, backdrop-filter 300ms ease-out 300ms;
   backdrop-filter: blur(3px);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  overflow: hidden;
 }
 .modal {
   width: 100vw;
@@ -16,13 +13,15 @@
   padding-right: 24px;
   padding-left: 24px;
   transition: transform 300ms ease-out;
+  & > .mobil-wrapper {
+    padding-top: 24px;
+    margin-bottom: 0;
+  }
 }
 .mobil-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding-top: 40px;
   margin-bottom: 20px;
 }
 .modal__wrapper {
@@ -42,9 +41,6 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
-}
-.modal__form :last-child {
-  margin-top: 20px;
 }
 .modal__close {
   border: none;
@@ -68,6 +64,7 @@
   color: var(--title-black);
 }
 .modal__btn-container {
+  padding-top: 10px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -82,7 +79,7 @@
   .mobil-container {
   }
   .modal {
-    margin: 0 auto;
+    margin: 24px auto 24px;
     width: 400px;
     height: 550px;
   }
