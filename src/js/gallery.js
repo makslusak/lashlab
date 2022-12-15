@@ -1,6 +1,4 @@
-// import Swiper JS
 import Swiper, { Navigation, Pagination, Keyboard } from 'swiper';
-// import Swiper styles
 import 'swiper/swiper.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
 import 'swiper/modules/navigation/navigation.min.css';

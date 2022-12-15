@@ -1,9 +1,5 @@
 import { noScrollBody, scrollBody } from './modal';
-
-const menuBtnRef = document.querySelector('[data-menu-open]');
-const closeBtnRef = document.querySelector('[data-menu-close]');
-const mobilMenuRef = document.querySelector('.mobil-menu');
-const mobilLinksRef = document.querySelectorAll('[data-mobil-links]');
+import { closeBtnRef, menuBtnRef, mobilLinksRef, mobilMenuRef } from './refs';
 
 menuBtnRef.addEventListener('click', openMenu);
 

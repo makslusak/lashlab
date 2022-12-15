@@ -1,17 +1,15 @@
-import { postToApi } from './postData';
 import axios from 'axios';
-
-const TOKEN = '5901077802:AAG9sLF9m09SLsPjDH02M0BkJyGRBWx9snE';
-const CHAT_ID = '-608545556';
-const URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-const btnsRef = document.querySelectorAll('[data-modal-open]');
-const backdropRef = document.querySelector('.backdrop');
-const btnCloseModalRef = document.querySelector('[data-modal-close]');
-const formRef = document.querySelector('[data-form]');
-const submitBtnRef = document.querySelector('[data-submitBtn]');
-const nameRef = document.querySelector('#name');
-const telRef = document.querySelector('#tel');
-const textRef = document.querySelector('#text');
+import {
+  backdropRef,
+  btnCloseModalRef,
+  btnsRef,
+  CHAT_ID,
+  formRef,
+  toastError,
+  toastSuccess,
+  URL,
+} from './refs';
+import { toastShown } from './toasts';
 
 btnsRef.forEach(btn => btn.addEventListener('click', openModal));
 
@@ -48,11 +46,12 @@ function submitForm(evt) {
       text: message,
     })
     .then(resp => {
-      if (resp.status === 200) evt.target.name.value = '';
-      evt.target.tel.value = '';
-      evt.target.text.value = '';
-      closeModal();
-    });
+      if (resp.status === 200) {
+        closeModal();
+        toastShown(toastSuccess);
+      } else toastShown(toastError);
+    })
+    .catch(toastShown(toastError));
 }
 
 export function noScrollBody() {

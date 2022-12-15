@@ -3,19 +3,19 @@
   position: absolute;
   z-index: 11;
   top: 20px;
-  right: 20;
+  right: 0;
   width: 360px;
   height: 100px;
   padding: 40px 20px 20px;
   text-align: center;
-  border-radius: 4px;
   transition: transform 300ms ease-out;
+  color: var(--title-black);
 }
 .toast__success {
-  background-color: rgb(223, 252, 235);
+  background-color: rgb(255, 152, 231);
 }
 .toast__error {
-  background-color: rgb(255, 230, 218);
+  background-color: rgb(255, 152, 231);
 }
 .toast__btn {
   border: none;
@@ -32,4 +32,14 @@
   top: 10px;
   right: 10px;
   z-index: 12;
+}
+.toast__tel {
+  color: var(--title-black);
+  text-decoration: underline;
+}
+@media screen and (max-width: 767.7px) {
+  .toast {
+    top: 0px;
+    width: 100%;
+  }
 }
