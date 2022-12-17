@@ -36,22 +36,27 @@ function backdropClick(evt) {
   if (evt.target === evt.currentTarget || evt.code === 'Escape') closeModal();
 }
 
-function submitForm(evt) {
+async function submitForm(evt) {
   evt.preventDefault();
   let message = `<b>&#128151 Заявка з сайту &#128151</b>\n <b>Ім'я: </b> ${evt.target.name.value}\n <b>Номер телефону: </b> ${evt.target.tel.value}\n <b>Коментар: </b> ${evt.target.text.value}`;
-  axios
-    .post(URL, {
-      chat_id: CHAT_ID,
-      parse_mode: 'html',
-      text: message,
-    })
-    .then(resp => {
-      if (resp.status === 200) {
-        closeModal();
-        toastShown(toastSuccess);
-      } else toastShown(toastError);
-    })
-    .catch(toastShown(toastError));
+  try {
+    await axios
+      .post(URL, {
+        chat_id: CHAT_ID,
+        parse_mode: 'html',
+        text: message,
+      })
+      .then(resp => {
+        if (resp.status === 200) {
+          closeModal();
+          toastShown(toastSuccess);
+        } else {
+          toastShown(toastError);
+        }
+      });
+  } catch (error) {
+    toastShown(toastError);
+  }
 }
 
 export function noScrollBody() {
