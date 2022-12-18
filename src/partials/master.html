@@ -10,12 +10,17 @@
     </div>
 
     <div class="master__card">
-      <img
-        loading="lazy"
-        class="master__photo"
-        src="./images/mobil-masterimg.jpg"
-        alt="Коваленко Олена"
-      />
+      <picture class="master__photo">
+        <source type="image/webp" srcset="./images/mobil-masterimg-webp.webp" />
+        <source type="image/jpeg" srcset="./images/mobil-masterimg.jpg" />
+        <img
+          loading="lazy"
+          class="master__photo"
+          src="./images/mobil-masterimg.jpg"
+          alt="Коваленко Олена"
+        />
+      </picture>
+
       <div class="master__description">
         <div class="master__texts">
           <h2 class="title title--black">Коваленко Олена</h2>

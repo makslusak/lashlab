@@ -10,16 +10,25 @@
       <div class="about__images">
         <picture class="about__image">
           <source
+            srcset="./images/desktop-about-webp.webp"
+            media="(min-width: 1000px)"
+            type="image/webp"
+          />
+          <source
             srcset="./images/desktop-about-min.jpg"
             media="(min-width: 1000px)"
             type="image/jpeg"
+          />
+          <source
+            srcset="./images/tablet-about-webp.webp"
+            media="(min-width: 768px)"
+            type="image/webp"
           />
           <source
             srcset="./images/tablet-about-min.jpg"
             media="(min-width: 768px)"
             type="image/jpeg"
           />
-
           <img
             loading="lazy"
             class="about__image"
@@ -29,14 +38,24 @@
         </picture>
         <picture class="about__image">
           <source
-            srcset="./images/desktop-about2-min.jpg"
+            type="image/webp"
+            srcset="./images/desktop-about2-webp.webp"
             media="(min-width: 1000px)"
-            type="image/jpeg"
           />
           <source
+            type="image/jpeg"
+            srcset="./images/desktop-about2-min.jpg"
+            media="(min-width: 1000px)"
+          />
+          <source
+            type="image/webp"
+            srcset="./images/tablet-about2-webp.webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            type="image/jpeg"
             srcset="./images/tablet-about2-min.jpg"
             media="(min-width: 768px)"
-            type="image/jpeg"
           />
 
           <img
