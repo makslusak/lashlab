@@ -39,3 +39,29 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(../images/tablet-footer-min.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .contacts {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(../images/desktop-footer-min.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center center;
+  }
+}
