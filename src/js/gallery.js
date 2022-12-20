@@ -1,7 +1,9 @@
-import Swiper, { Navigation, Pagination, Keyboard } from 'swiper';
+import Swiper, { Navigation, Pagination, Keyboard, Lazy } from 'swiper';
 import 'swiper/swiper.min.css';
 import 'swiper/modules/pagination/pagination.min.css';
 import 'swiper/modules/navigation/navigation.min.css';
+import 'swiper/modules/lazy/lazy';
+import 'swiper/modules/keyboard/keyboard';
 
 function numberOfSlide() {
   if (window.matchMedia('(min-width: 1000px)').matches) {
@@ -30,7 +32,7 @@ function slideGap() {
 }
 
 const swiper = new Swiper('.mySwiper', {
-  modules: [Navigation, Pagination, Keyboard],
+  modules: [Navigation, Pagination, Keyboard, Lazy],
   slidesPerView: numberOfSlide(),
   spaceBetween: slideGap(),
   slidesPerGroup: 1,
@@ -38,6 +40,10 @@ const swiper = new Swiper('.mySwiper', {
   grabCursor: true,
   loop: true,
   loopFillGroupWithBlank: true,
+  watchSlidesProgress: true,
+  preloadImages: false,
+  lazy: true,
+  watchSlidesProgress: true,
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
