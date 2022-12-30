@@ -27,12 +27,21 @@ function slideGap() {
   } else if (window.matchMedia('(min-width: 768px)').matches) {
     return 110;
   } else {
-    return 0;
+    return 4;
+  }
+}
+
+function isCentered() {
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    return false;
+  } else {
+    return true;
   }
 }
 
 const swiper = new Swiper('.mySwiper', {
   modules: [Navigation, Pagination, Keyboard, Lazy],
+  centeredSlides: isCentered(),
   slidesPerView: numberOfSlide(),
   spaceBetween: slideGap(),
   slidesPerGroup: 1,
